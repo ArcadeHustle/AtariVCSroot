@@ -298,3 +298,18 @@ PID   USER     COMMAND
   868 root     ash -i
   872 root     busybox ps
 ```
+
+Atari Online data for each user is stored in /home/user/.var/bundles and /home/user/.config/unity3d/Atari/Dashboard/Production/GameDoc/Users/<br>
+
+```
+/ # ls  /home/user/.var/bundles 
+xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17
+guest\x2duser
+```
+
+```
+/ # ls /home/user/.config/unity3d/Atari/Dashboard/Production/GameDoc/Users/
+guest@atari.com
+xxxx@hostile.com
+```
+
