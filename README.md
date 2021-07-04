@@ -1,10 +1,46 @@
 # AtariVCSroot
 
+Atari VCS 800 - https://atarivcs.com/atari-vcs-800-black-walnut-all-in-bundle/
+
+The following file systems are present on the VCS
+```
+/ # fdisk -l 
+Disk /dev/mmcblk0: 29.2 GiB, 31306285056 bytes, 61145088 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: C30F3CC4-E0B8-480A-B0FD-406A1ABF6E85
+
+Device           Start      End  Sectors   Size Type
+/dev/mmcblk0p1    3906   500000   496095 242.2M EFI System
+/dev/mmcblk0p2  500001   750000   250000 122.1M EFI System
+/dev/mmcblk0p3  750001  1000000   250000 122.1M EFI System
+/dev/mmcblk0p4 1000001  1500000   500000 244.1M Linux filesystem
+/dev/mmcblk0p5 1500001  2000000   500000 244.1M unknown
+/dev/mmcblk0p6 2000001  2500000   500000 244.1M unknown
+/dev/mmcblk0p7 2500001  5250000  2750000   1.3G Linux root (x86-64)
+/dev/mmcblk0p8 5250001  8000000  2750000   1.3G Linux root (x86-64)
+/dev/mmcblk0p9 8000001 61145054 53145054  25.3G Linux home
+```
+
+The system runs Apertis Linux - https://www.apertis.org
+```
+/ # cat /etc/issue	
+Apertis v2020 \n \l
+```
+
+Multiple partitions are for use by the running Apertis instance. 
+/dev/mmcblk0p4 is the /var partition for Apertis
+/dev/mmcblk0p7 is the main linux OS
+/dev/mmcblk0p8 is the backup linux OS
+/dev/mmcblk0p9 is the /home partition for Apertis
+
+Once you've gained root access via this repo you should see the following result:
 ```
 $ nc -vvv 192.168.1.28 4444
 Connection to 192.168.1.28 port 4444 [tcp/krb524] succeeded!
 ash -i
-
 
 BusyBox v1.30.1 (Apertis 1:1.30.1-4co1bv2020preb1) built-in shell (ash)
 Enter 'help' for a list of built-in commands.
