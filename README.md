@@ -30,11 +30,11 @@ The system runs Apertis Linux - https://www.apertis.org
 Apertis v2020 \n \l
 ```
 
-Multiple partitions are for use by the running Apertis instance. 
-/dev/mmcblk0p4 is the /var partition for Apertis
-/dev/mmcblk0p7 is the main linux OS
-/dev/mmcblk0p8 is the backup linux OS
-/dev/mmcblk0p9 is the /home partition for Apertis
+Multiple partitions are for use by the running Apertis instance.<br>
+/dev/mmcblk0p4 is the /var partition for Apertis<br>
+/dev/mmcblk0p7 is the main linux OS<br>
+/dev/mmcblk0p8 is the backup linux OS<br>
+/dev/mmcblk0p9 is the /home partition for Apertis<br>
 
 Once you've gained root access via this repo you should see the following result:
 ```
