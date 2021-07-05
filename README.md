@@ -378,6 +378,11 @@ xxxx@hostile.com
 
 The root of the Dashboard appears to use some sort of encrypted file names. 
 ```
+/home/user/.config/unity3d/Atari/Dashboard/Production # find / -name QJ3X3aqmEI43VlIo
+/home/user/.var/bundles/19dd0ddd\x2dbd3f\x2d4f71\x2db8d9\x2dbdaefb3f7d17/QJ3X3aqmEI43VlIo
+/home/user/.config/unity3d/Atari/Dashboard/Production/QJ3X3aqmEI43VlIo
+/home/games/QJ3X3aqmEI43VlIo
+
 /home/user/.config/unity3d/Atari/Dashboard/Production # ls
 30IZiAqvkNhYpiE8
 3dyv7oqb3B5klfWY
