@@ -334,6 +334,38 @@ playerstate.02
 playerstate.03
 playerstate.04
 versioninfo
+
+/home/user/.var/bundles/xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17/QJ3X3aqmEI43VlIo/com.bitbull.jbj # busybox xxd com.bitbull.generic.ldbrd.ldbrd_highscores
+00000000: 0900 0000 0366 6676 0000 0000 0004 6e61  .....ffv......na
+00000010: 6d65 0310 4c44 4252 445f 4849 4748 5343  me..LDBRD_HIGHSC
+00000020: 4f52 4553 0564 6e61 6d65 030e 6869 6768  ORES.dname..high
+00000030: 6573 7420 7363 6f72 6573 0473 6f72 7400  est scores.sort.
+00000040: 0000 0000 0764 6973 706c 6179 0000 0000  .....display....
+00000050: 000e 6469 7370 6c61 795f 666f 726d 6174  ..display_format
+00000060: 0000 0000 0003 6d61 7800 0f00 0000 0370  ......max......p
+00000070: 6d76 0100 0000 0007 656e 7472 6965 730d  mv......entries.
+00000080: 1300 0000 fd01 00e8 0300 0007 6a65 742d  ............jet-
+00000090: 626f 7901 0000 0084 0300 0007 6a65 742d  boy.........jet-
+000000a0: 626f 7902 0000 0020 0300 0007 6a65 742d  boy.... ....jet-
+000000b0: 626f 7903 0000 00bc 0200 0007 6a65 742d  boy.........jet-
+000000c0: 626f 7904 0000 0058 0200 0007 6a65 742d  boy....X....jet-
+000000d0: 626f 7905 0000 00f4 0100 0007 6a65 742d  boy.........jet-
+000000e0: 626f 7906 0000 0090 0100 0007 6a65 742d  boy.........jet-
+000000f0: 626f 7907 0000 002c 0100 0007 6a65 742d  boy....,....jet-
+00000100: 626f 7908 0000 00c8 0000 0007 6a65 742d  boy.........jet-
+00000110: 626f 7909 0000 0064 0000 0007 6a65 742d  boy....d....jet-
+00000120: 626f 790a 0000 005a 0000 0007 6a65 742d  boy....Z....jet-
+00000130: 626f 790b 0000 0050 0000 0007 6a65 742d  boy....P....jet-
+00000140: 626f 790c 0000 0046 0000 0007 6a65 742d  boy....F....jet-
+00000150: 626f 790d 0000 003c 0000 0007 6a65 742d  boy....<....jet-
+00000160: 626f 790e 0000 0032 0000 0007 6a65 742d  boy....2....jet-
+00000170: 626f 790f 0000 0028 0000 0007 6a65 742d  boy....(....jet-
+00000180: 626f 7910 0000 001e 0000 0007 6a65 742d  boy.........jet-
+00000190: 626f 7911 0000 0014 0000 0007 6a65 742d  boy.........jet-
+000001a0: 626f 7912 0000 000a 0000 0007 6a65 742d  boy.........jet-
+000001b0: 626f 7913 0000 00                        boy....
+
+
 ```
 
 Your actual Atari Online usernames and used to store three files [GameResponse, AppResponse, and PortalSortInfo] in an unkown, potentially encrypted data blob in the unity3d .config folder for Dashboard.<br>
