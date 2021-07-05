@@ -319,9 +319,7 @@ Chrome Downloads are among the things you can find in these directories.
 
 ```
 
-Individual game savestates and highscores are stored with refrences to the vendor. In this case you can see Jetboard Joust by BitBull<br>
-http://jetboardjoust.bitbull.com<br>
-
+Individual game savestates and highscores are stored with refrences to the vendor. In this case you can see Jetboard Joust by BitBull - http://jetboardjoust.bitbull.com<br>
 
 ```
 /# cd /home/user/.var/bundles/xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17
