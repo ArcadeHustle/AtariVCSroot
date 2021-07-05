@@ -437,7 +437,7 @@ versioninfo
 
 ```
 
-Your actual Atari Online usernames and used to store three files [GameResponse, AppResponse, and PortalSortInfo] in an unkown, potentially encrypted data blob in the unity3d .config folder for Dashboard.<br>
+Your actual Atari Online usernames are used to store three files [GameResponse, AppResponse, and PortalSortInfo] in an unkown, potentially encrypted data blob in the unity3d .config folder for Dashboard.<br>
 
 ```
 / # ls /home/user/.config/unity3d/Atari/Dashboard/Production/GameDoc/Users/
