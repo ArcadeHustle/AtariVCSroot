@@ -299,13 +299,44 @@ PID   USER     COMMAND
   872 root     busybox ps
 ```
 
-Atari Online data for each user is stored in /home/user/.var/bundles and /home/user/.config/unity3d/Atari/Dashboard/Production/GameDoc/Users/<br>
+Atari Online gaming data for each user is stored in /home/user/.var/bundles and /home/user/.config/unity3d/Atari/Dashboard/Production/GameDoc/Users/<br>
 
 ```
 / # ls  /home/user/.var/bundles 
 xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17
 guest\x2duser
 ```
+
+Chrome Downloads are among the things you can find in these directories. 
+```
+/home/user/.var/bundles # find . -name Downloads
+./xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17/S9d8oFdW8umLtTUp/Downloads
+
+```
+
+Individual game savestates and highscores are stored with refrences to the vendor. In this case you can see Jetboard Joust by BitBull<br>
+http://jetboardjoust.bitbull.com<br>
+
+
+```
+/# cd /home/user/.var/bundles/xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17
+
+/home/user/.var/bundles/xxdd0ddd\xCdbd3f\xff4f75\x2dttd9\x2drdaehh3fjj17 # ls */*
+QJ3X3aqmEI43VlIo/com.bitbull.jbj:
+com.bitbull.generic.gp
+com.bitbull.generic.ldbrd.ldbrd_highscores
+com.bitbull.generic.stats
+gamedata
+jbjsettings
+playerstate.00
+playerstate.01
+playerstate.02
+playerstate.03
+playerstate.04
+versioninfo
+```
+
+Your actual Atari Online usernames and used to store three files [GameResponse, AppResponse, and PortalSortInfo] in an unkown, potentially encrypted data blob in the unity3d .config folder for Dashboard.<br>
 
 ```
 / # ls /home/user/.config/unity3d/Atari/Dashboard/Production/GameDoc/Users/
