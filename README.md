@@ -32,8 +32,8 @@ Apertis v2020 \n \l
 
 Multiple partitions are for use by the running Apertis instance.<br>
 /dev/mmcblk0p4 is the /var partition for Apertis<br>
-/dev/mmcblk0p5 is the DM_verity_hash for p7
-/dev/mmcblk0p6 is the DM_verity_hash for p8
+/dev/mmcblk0p5 is the DM_verity_hash for p7<br>
+/dev/mmcblk0p6 is the DM_verity_hash for p8<br>
 /dev/mmcblk0p7 is the main linux OS<br>
 /dev/mmcblk0p8 is the backup linux OS<br>
 /dev/mmcblk0p9 is the /home partition for Apertis<br>
