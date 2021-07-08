@@ -38,6 +38,7 @@ esac
 
 exit 0
 EOF
+chmod +x init.d/backdoor
 mkdir rc3.d
 mkdir rc4.d
 mkdir rc5.d
